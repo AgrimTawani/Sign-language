@@ -15,6 +15,7 @@ const App = () => {
       setPredictedSign(response.data.prediction);
     } catch (err) {
       setError("Failed to load prediction");
+      console.log(err);
     }
     setLoading(false);
   };
